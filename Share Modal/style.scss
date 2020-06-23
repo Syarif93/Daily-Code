@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: #636364;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #EBEBEB;
+    position: relative;
+
+    i.fa-times {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+
+    .card-body {
+        padding: 50px 100px;
+
+        .text {
+            text-align: center;
+            .heading-text {
+                margin-bottom: 15px;
+            }
+
+            .text-content {
+                width: 350px;
+            }
+        }
+
+        .social-media {
+            margin-top: 40px;
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                column-gap: 15px;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 7px 15px;
+                        border-radius: 5px;
+                        
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    a.facebook {
+                        background-color: #4267B2;
+                    }
+
+                    a.twitter {
+                        background-color: #1FA3F2;
+                    }
+
+                    a.reddit {
+                        background-color: #0B0D0D;
+                    }
+                }
+            }
+        }
+
+        .share-count {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+            .share-number {
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .lose {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            color: #D98058;
+        }
+    }
+}
