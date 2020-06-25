@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1E1E21;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.current-plan {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  text-align: center;
+  background-color: #BC1E4A;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px 40px;
+  border-radius: 0 0 5px 5px;
+}
+
+.current-plan .text {
+  color: #ffffff;
+}
+
+.current-plan .text p {
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.current-plan .text h4 {
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.current-plan .text h4 i {
+  font-size: 5px;
+  margin: 0 10px;
+}
+
+.choose-plan {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: #ffffff;
+}
+
+.choose-plan h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.choose-plan .choose-bill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.choose-plan .choose-bill .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+.choose-plan .choose-bill .switch input {
+  position: relative;
+  display: block;
+  opacity: 0;
+  width: 45px;
+  height: 25px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.choose-plan .choose-bill .switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.choose-plan .choose-bill .switch input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+          transform: translateX(18px);
+}
+
+.choose-plan .choose-bill .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #BC1E4A;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.choose-plan .choose-bill .switch .slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffffff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.choose-plan .plan-boxes {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  margin-bottom: 50px;
+}
+
+.choose-plan .plan-boxes .plan-box {
+  border-radius: 5px;
+  background-color: #22262C;
+  text-align: center;
+  padding: 20px 40px;
+  width: 340px;
+}
+
+.choose-plan .plan-boxes .plan-box .price {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.choose-plan .plan-boxes .plan-box ul {
+  text-align: start;
+  list-style: none;
+  height: 250px;
+}
+
+.choose-plan .plan-boxes .plan-box ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.choose-plan .plan-boxes .plan-box ul li i.fa-circle {
+  font-size: 5px;
+  color: #BC1E4A;
+  margin-right: 10px;
+}
+
+.choose-plan .plan-boxes .plan-box .btn-choose {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #BC1E4A;
+  border-radius: 3px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.choose-plan .plan-boxes .plan-box .btn-choose:hover {
+  background-color: #BC1E4A;
+}
+
+.choose-plan .plan-boxes .plan-box:nth-child(2) ul li.select-price {
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.choose-plan .plan-boxes .plan-box:nth-child(2) ul li.select-price p {
+  text-align: left;
+  margin-left: 15px;
+  font-size: 12px;
+  color: #BC1E4A;
+  margin-top: 5px;
+}
+
+.choose-plan .plan-boxes .plan-box:nth-child(2) ul li.select-price select {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid #8C9494;
+  font-size: 20px;
+  padding: 0 20px;
+  color: #ffffff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+}
+
+.choose-plan .plan-boxes .plan-box:nth-child(2) ul li.select-price i.fa-chevron-down {
+  position: absolute;
+  top: 12px;
+  right: 22px;
+}
+/*# sourceMappingURL=style.css.map */
